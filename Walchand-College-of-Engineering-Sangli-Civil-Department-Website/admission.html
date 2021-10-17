@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="screen" href="admission.css">    
+    <link rel="stylesheet" media="screen" href="footer.css">
+    <link rel="stylesheet" media="screen" href="head.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="icon" href="image/wce logo.jpg">
+    <title>WCE, Sangli</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <div id="first">
+            <center><h1><br>Walchand College of Engineering, Sangli</h1>
+                <h4><br><i>(An Autonomous Institute) <br>Established in 1947 <br><br>
+                    Approved by AICTE New Delhi, NBA Accredited<br><br></i></h4>
+            </center>
+            
+        </div>
+        <div class="navbar">
+            <div id="align">
+                <a href="index.html">HOME</a>
+                <a href="course.html">COURSE</a>
+                <a href="admission.html">ADMISSION</a>
+                
+                <a href="about.html">ABOUT US</a>
+                <div class="dropdown">
+                  <button class="dropbtn">MORE 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="contact.html">Campus Visit</a>
+                    <a href="event.html">Events</a>
+                    <a href="gallery.html">Gallery</a>
+                  </div>
+                </div> 
+            </div>
+        </div>
+        <a href="index.html"> <img src="image/wce logo.jpg" alt="sea college logo" height="170px" width="170px"></a>
+    </header>
+
+         <div id="para" class="parallax"></div>
+        <!-- <img src="image/college1.jpg" alt="college image" height="450px" width="100%"> -->
+        <form action="func.php" method="POST">
+            <label for="name">Name</label><input type="text" name="name" required> <br>
+            <label for="name">Father Name</label><input type="text" name="fname"> <br>
+            <label for="name">Mother Name</label><input type="text" name="mname"> <br>
+            <label for="email">Email</label><input type="email" name="email" required> <br>
+            <label for="Phone">Phone Number</label><input type="tel" name="phone" required> <br>
+            <label for="Phone">Parent Phone Number</label><input type="tel" name="pphone" required> <br>
+            <label for="gender">Gender</label> <select name="gender" id="gender" required>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select> <br>
+            <label for="degree">Highest degree</label> <select name="hdegree" id="hdegree" required>
+                <option value="10">10th</option>
+                <option value="2nd PUC">2nd PUC</option>
+                <option value="diploma">Diploma</option>
+            </select> <br>
+            <label for="apply-for">Apply For</label> <select name="applyfor" id="apply-for" required>
+                <option value="Graduation">Graduation</option>
+                <option value="Post-Graduation">Post-Graduation</option>
+                <option value="MBA">MBA</option>
+            </select> <br>
+            <label for="apply-for">Department</label> <select name="dept" id="department" required>
+                <option value="Computer">Computer Science & Engineering</option>
+                <option value="Mechanical">Mechanical Engineering</option>
+                <option value="Electronics">Electronics & Tele. Communication Engineering</option>
+                <option value="Electrical">Electrical Engineering</option>
+                <option value="Mechanical">Mechanical Engineering</option>
+            </select> <br>
+            <input type="submit" value="Submit" name="login">
+        </form>
+        <script>
+            input.onblur = function() {
+              if (!input.value.includes('@')) { // not email
+                input.classList.add('invalid');
+                // error.innerHTML = 'Please enter a correct email.'
+              }
+            };
+
+            input.onfocus = function() {
+              if (this.classList.contains('invalid')) {
+                // remove the "error" indication, because the user wants to re-enter something
+                this.classList.remove('invalid');
+                // error.innerHTML = "";
+              }
+            };
+        </script>
+        <script src="app.js"></script>
+        <footer>
+            <div class="footerimg">
+                <h2>Gallery</h2>
+                <a style="text-decoration:none;" href="gallery.html">
+                    <img src="image/wce2.jpg" width="100px" height="100px" alt="Campus picture">
+                    <img src="image/wce4.jpg" width="100px" height="100px" alt="Badminton court">
+                    <img src="image/wce5.jpg" width="100px" height="100px" alt="Library">
+                    <img src="image/wce6.jpg" width="100px" height="100px" alt="colleg fest">
+                    <img src="image/wce7.jpg" width="100px" height="100px" alt="festival picture">
+                    <img src="image/wce10.png" width="100px" height="100px" alt="college event">
+                </a>
+            </div>
+            <div class="foot_second">
+                    <h2>About Us</h2>
+                    <p>
+                        Walchand College of Engineering became autonomous in 2007. 
+                        The college revamped its academic structure and contents, in consultation with few US and IIT academic experts.  
+                        It participated in the World Bank funded, Government of India scheme, namely, Technical Education Quality Improvement Program (TEQIP) in Phase I from 2005-2009, 
+                        wherein it stood all-India 2nd out of 127 participating institutions in terms of program impact performance. 
+                        The college is presently participating in Phase II of TEQIP with outstanding performance                    </p>
+                    <a href="index.html">HOME</a>
+                    <a href="course.html">COURSE</a>
+                    <a href="event.html">EVENTS</a>
+                    <a href="admission.html">ADMISSION</a>
+                    <a href="contact.html">CONTACT</a>
+                   <p style="color:red; margin-top: 10px;"> &copy;Copyright 2021 All rights reserved. SayaliDesai@2021 </p>
+                </div>
+                
+        </footer>    
+</body>
+</html>
